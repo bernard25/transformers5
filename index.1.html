@@ -1,6 +1,26 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<script language="JavaScript">
+var i = 0;
+var path = new Array();
+ 
+// LIST OF IMAGES
+path[0] = image/optimus2.jpg";
+path[1] = "image/optimus.gif";
+path[2] = "image/megatron.gif";
+
+function swapImage()
+{
+   document.slide.src = path[i];
+   if(i < path.length - 1) i++; else i = 0;
+   setTimeout("swapImage()",3000);
+}
+window.onload=swapImage;
+</script>
+<img height="200" name="slide" src="image_1.gif" width="400" />
+
+  
 <title>BERNARD HALL TRANSFORMERS</title>
 <style>
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
