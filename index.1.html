@@ -234,7 +234,22 @@ footer li a:hover{
                 <li><a class="active" href="index4.html">optimus</a></li>
                 <li><a href="#">autobots1</a></li>
             </ul></div>
+<div class="row">
+<h2>Container-Open</h2>
+<div class="sign"><img src="images/neon-open-sign.png" alt="blinking!" id="blinking_image" style="visibility: hidden;"></div>
 
+<script language="JavaScript" type="text/javascript">
+var img = document.getElementById('blinking_image');
+
+var interval = window.setInterval(function(){
+    if(img.style.visibility == 'hidden'){
+        img.style.visibility = 'visible';
+    }else{
+        img.style.visibility = 'hidden';
+    }
+}, 1000); //the 1000 here is milliseconds and determines how often the interval should be run.
+</script>
+</div>
 <div id="container-header">
  
 <h1>MORE THAN MEETS THE EYE</h1>
